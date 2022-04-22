@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Components/Header/Header';
-import './App.css';
+import './App.scss';
 
 export const App:React.FC = () => (
     <div className="wrapper">

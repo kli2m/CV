@@ -1,0 +1,40 @@
+@import '../../styles/theme.scss';
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: max-content;
+  background-color: $text-color;
+  border-radius: 3px;
+  color: $light-color;
+  margin: 20px 0;
+   :hover {
+    background-color: $secondary-color;
+  }
+  &__item {
+    cursor: pointer;
+    font-family: 'Typometry Regular';
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    font-style: normal;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_border {
+      border-right: 2px solid $light-color;
+      padding: 0 10px;
+      height: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__item:last-child div {
+    border: none;
+  }
+}

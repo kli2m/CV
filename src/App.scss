@@ -1,14 +1,11 @@
+@import './styles/theme.scss';
 .wrapper {
+  font-family: 'Alexander';
+  font-size: 16px;
   text-align: center;
-  background-color: #e5ecf8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.header {
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
