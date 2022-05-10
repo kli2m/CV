@@ -1,0 +1,40 @@
+@import '../../styles/theme.scss';
+.chapter {
+  position: relative;
+  padding-left: $indent-65;
+  margin: $indent-two-sides-10-0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__parallelogram {
+    width: $chapter-parall-width;
+    height: $chapter-parall-height;
+    background: $text-color;
+    transform: $transform-parallelogram-deg;
+    -webkit-transform: $transform-parallelogram-deg;
+    -moz-transform: $transform-parallelogram-deg;
+    -o-transform: $transform-parallelogram-deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_title {
+      font-family: 'Comfortaa';
+      font-size: $font-23;
+      letter-spacing: $letter-spacing-subtitle;
+      font-weight: $font-weight-medium;
+      font-style: $font-style-normal;
+      color: $light-color;
+      transform: $default-transform-parallelogram-deg;
+      -webkit-transform: $default-transform-parallelogram-deg;
+      -moz-transform: $default-transform-parallelogram-deg;
+      -o-transform: $default-transform-parallelogram-deg;
+    }
+  }
+  &__dividing-line {
+    width: $div-line-width;
+    height: $div-line-height;
+    position: absolute;
+    right: 0px;
+    background-color: $primary-color;
+  }
+}

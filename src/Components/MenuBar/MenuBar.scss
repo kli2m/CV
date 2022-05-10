@@ -4,22 +4,22 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: $menu-bar-height;
   width: max-content;
   background-color: $text-color;
-  border-radius: 3px;
+  border-radius: $border-radius-3;
   color: $light-color;
-  margin: 20px 0;
+  margin: $indent-two-sides-20-0;
    :hover {
     background-color: $secondary-color;
   }
   &__item {
     cursor: pointer;
     font-family: 'Typometry Regular';
-    font-size: 10px;
-    letter-spacing: 0.25em;
-    font-weight: 500;
-    font-style: normal;
+    font-size: $font-23;
+    letter-spacing: $letter-spacing-title;
+    font-weight: $font-weight-medium;
+    font-style: $font-style-normal;
     height: 100%;
     width: 100%;
     display: flex;
@@ -27,7 +27,7 @@
     justify-content: center;
     &_border {
       border-right: 2px solid $light-color;
-      padding: 0 10px;
+      padding: $indent-two-sides-0-10;
       height: 70%;
       display: flex;
       align-items: center;

@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuBar from 'Components/MenuBar/MenuBar';
+import { MenuBar } from 'Components';
 import './Header.scss';
 
 const Header = () => (
@@ -9,11 +9,8 @@ const Header = () => (
         <p className="content__personal-info_name">Klimm Ivan</p>
         <p className="content__personal-info_specialization">Front-end developer</p>
       </div>
-      <div className="content__menu">
-        <MenuBar />
-      </div>
+      <MenuBar />
     </div>
-    <div className="header__menu"></div>
   </header>
 );
 

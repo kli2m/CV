@@ -2,7 +2,68 @@
 
 $dark-color: #000000;
 $light-color: #ffffff;
-$header-background-color:#f3f3f3;
-$text-color:#304153;
+$header-background-color: #f3f3f3;
+$text-color: #304153;
 $primary-color: #007ea8;
-$secondary-color: #8090a2;
+$secondary-color: #cdcbd0;
+
+/* Sizes*/
+
+$menu-bar-height: 50px;
+$chapter-parall-width: 155px;
+$chapter-parall-height: 45px;
+$div-line-width: 850px;
+$div-line-height: 4px;
+$foto-weight: 230px;
+$contact-info-weight: 350px;
+$social-icon-size: 40px;
+$progress-outside-circle: 230px;
+$progress-outside-circle-half: calc($progress-outside-circle/2);
+$progress-thickness: 50px;
+$progress-inside-circle: calc($progress-outside-circle - ($progress-thickness));
+
+/*Font*/
+
+$font-16: 16px;
+$font-20: 20px;
+$font-23: 23px;
+$font-30: 30px;
+$font-55: 55px;
+$font-75: 75px;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-style-normal: normal;
+$font-style-italic: italic;
+$font-style-oblique: oblique;
+$letter-spacing-title: 0.25em;
+$letter-spacing-title-2: 0.15em;
+$letter-spacing-subtitle: 0.05em;
+$line-height-20: 20px;
+
+/* indents */
+
+$indent-5: 5px;
+$indent-10: 10px;
+$indent-20: 20px;
+$indent-65: 65px;
+$indent-70: 70px;
+$indent-110: 110px;
+$indent-two-sides-10-auto: $indent-10 auto;
+$indent-two-sides-5-0: $indent-5 0;
+$indent-two-sides-10-0: $indent-10 0;
+$indent-two-sides-20-0: $indent-20 0;
+$indent-two-sides-0-10: 0 $indent-10;
+$indent-two-sides-0-20: 0 $indent-20;
+$indent-progress-inside-circle: calc(($progress-thickness / 2));
+
+/* transform */
+
+$parallelogram-deg: 335deg;
+$transform-parallelogram-deg: skew($parallelogram-deg);
+$default-transform-parallelogram-deg: skew(-$parallelogram-deg);
+
+/* borders */
+
+$border-radius-3: 3px;
+$border-radius-circle: 50%;

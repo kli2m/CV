@@ -1,0 +1,50 @@
+@import '../../styles/theme.scss';
+.contact-info {
+  width: $contact-info-weight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: $indent-70;
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: inherit;
+    margin: $indent-two-sides-20-0;
+    .item {
+      margin: $indent-two-sides-5-0;
+      display: flex;
+      font-family: 'Comfortaa';
+      font-size: $font-23;
+      letter-spacing: $letter-spacing-title-2;
+      font-weight: $font-weight-medium;
+      font-style: $font-style-normal;
+      position: relative;
+      &__name {
+        font-weight: $font-weight-semi-bold;
+        margin-right: $indent-10;
+      }
+      &__value {
+        position: absolute;
+        left: $indent-110;
+        top: 0;
+      }
+    }
+  }
+  &__social-list {
+    width: inherit;
+    & ul {
+      display: flex;
+      width: inherit;
+      justify-content: space-between;
+    }
+    &_item a {
+      display: inline-block;
+      width: $social-icon-size;
+      height: $social-icon-size;
+      margin: $indent-5;
+    }
+  }
+}
