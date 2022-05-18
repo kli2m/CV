@@ -4,7 +4,6 @@ interface contactItem {
 }
 
 export interface contactInfoType {
-  Birth: contactItem;
   Web: contactItem;
   Phone: contactItem;
   Mail: contactItem;

@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: $indent-two-sides-0-10;
   &__items {
     display: flex;
     flex-direction: column;
@@ -13,22 +14,22 @@
     width: inherit;
     margin: $indent-two-sides-20-0;
     .item {
-      margin: $indent-two-sides-5-0;
+      margin: $indent-two-sides-10-0;
       display: flex;
       font-family: 'Comfortaa';
-      font-size: $font-23;
+      font-size: $font-1-3;
       letter-spacing: $letter-spacing-title-2;
       font-weight: $font-weight-medium;
       font-style: $font-style-normal;
       position: relative;
       &__name {
         font-weight: $font-weight-semi-bold;
-        margin-right: $indent-10;
       }
       &__value {
         position: absolute;
-        left: $indent-110;
+        left: $indent-80;
         top: 0;
+        width: max-content;
         a,
         a:active {
           text-decoration: none;

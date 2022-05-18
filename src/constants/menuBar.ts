@@ -43,13 +43,14 @@ const menuBar: MenuBarType = {
     {
       title: 'Higher education',
       dates: 'Sep 2012 - Jun 2017',
-      description: 'Polotsk State University, specialty',
+      description:
+        'Polotsk State University, specialty «Economics and management at the enterprise», qualification «Manager-economist»',
     },
     {
       title: 'Technical school ',
       dates: 'Sep 2003 - Jun 2007',
       description:
-        'Vitebsk State Polytechnic College, specialty «Economics and management at the enterprise», qualification «Manager-economist»',
+        'Vitebsk State Polytechnic College, specialty «Software of information technologies», qualification «Technician programmer»',
     },
   ],
   LANGUAGES: [

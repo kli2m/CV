@@ -13,32 +13,31 @@
       content: '\2022';
       color: $primary-color;
       font-weight: $font-weight-semi-bold;
-      font-size: $font-30;
+      font-size: $font-1-6;
       display: inline-block;
       position: absolute;
-      top: calc($font-30 / 2);
+      top: calc($font-1-6 / 2);
       left: 0;
       margin-left: -1em;
     }
     .item__header {
       display: flex;
-      font-size: $font-19;
+      font-size: $font-1-6;
       padding: $indent-5;
       position: relative;
       &_title {
-        font-weight: $font-weight-regular;
+        font-weight: $font-weight-semi-bold;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-right: $indent-20;
-        padding: $indent-5;
+        padding: $indent-3;
         width: $title-of-list-item-width;
       }
       &_dates {
         font-weight: $font-weight-medium;
         background-color: $quaternary-color;
         border-radius: $border-radius-10;
-        padding: $indent-5;
+        padding: $indent-two-sides-3-10;
         left: $indent-50;
         display: inline-block;
         align-items: center;
@@ -49,7 +48,9 @@
     }
     .item__description {
       position: relative;
-      font-size: $font-30;
+      font-size: $font-1-6;
+      text-align: start;
+      padding: $indent-two-sides-0-10;
     }
   }
 }
