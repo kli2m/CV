@@ -1,4 +1,4 @@
-export { default as menuBar } from './menuBar';
-export * from './contactInfo';
-export * from './socialList';
+export { default as INFO } from './info';
+export { default as CONTACT_INFO } from './contactInfo';
+export { default as SOCIAL_LIST } from './socialList';
 export * from './skills';

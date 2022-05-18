@@ -1,9 +1,9 @@
 import React from 'react';
 import './InfoList.scss';
-import { event } from 'interfaces';
+import { Event } from 'interfaces';
 
 type InfoListType = {
-  experience: event[];
+  experience: Event[];
 };
 
 const InfoList: React.FC<InfoListType> = (props) => {
@@ -11,12 +11,12 @@ const InfoList: React.FC<InfoListType> = (props) => {
   return (
     <ul className="list">
       {experience.map((item, ind) => (
-        <li className="list__item" key={`${item.title} ${ind}`}>
+        <li className="list__item" key={`${item.TITLE} ${ind}`}>
           <div className="item__header">
-            <div className="item__header_title">{item.title}</div>
-            <div className="item__header_dates">{item.dates}</div>
+            <div className="item__header_title">{item.TITLE}</div>
+            <div className="item__header_dates">{item.PERIOD}</div>
           </div>
-          <div className="item__description">{item.description}</div>
+          <div className="item__description">{item.DESCRIPTION}</div>
         </li>
       ))}
     </ul>

@@ -1,8 +1,9 @@
-import { skillsType } from 'interfaces';
+import { SkillsType } from 'interfaces';
 
-export const skills: skillsType = {
-  'HTML/CSS': 90,
-  JavaScript: 90,
-  React: 70,
-  NodeJs: 40,
-};
+export const SKILLS: SkillsType[] = [
+  { SKILL: 'HTML/CSS', LEVEL: 90 },
+  { SKILL: 'JavaScript', LEVEL: 90 },
+  { SKILL: 'React', LEVEL: 70 },
+  { SKILL: 'NodeJs', LEVEL: 40 },
+
+];

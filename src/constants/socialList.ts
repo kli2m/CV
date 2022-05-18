@@ -1,17 +1,19 @@
-import { socialListType } from 'interfaces';
+import { SocialListType } from 'interfaces';
 
-export const socialList: socialListType = {
-  LinkedIn: {
-    link: 'https://www.linkedin.com/in/ivan-klimm-6022461b7',
-    icon: '../../assets/icons/linkedin.png',
+const SOCIAL_LIST: SocialListType[] = [
+  {
+    NAME: 'LinkedIn',
+    LINK: 'https://www.LINKedin.com/in/ivan-klimm-6022461b7',
+    ICON: '../../assets/icons/LINKedin.png',
   },
-  Facebook: {
-    link: 'https://www.facebook.com/profile.php?id=100002619090545',
-    icon: '../../assets/icons/facebook.png',
+  {
+    NAME: 'Facebook',
+    LINK: 'https://www.facebook.com/profile.php?id=100002619090545',
+    ICON: '../../assets/icons/facebook.png',
   },
-  Telegram: { link: 'https://t.me/kli2m', icon: '../../assets/icons/telegram.png' },
-  GitHub: { link: 'https://github.com/kli2m', icon: '../../assets/icons/github.png' },
-  VK: { link: 'https://vk.com/kli2m', icon: '../../assets/icons/vk.png' },
-};
+  { NAME: 'Telegram', LINK: 'https://t.me/kli2m', ICON: '../../assets/icons/telegram.png' },
+  { NAME: 'GitHub', LINK: 'https://github.com/kli2m', ICON: '../../assets/icons/github.png' },
+  { NAME: 'VK', LINK: 'https://vk.com/kli2m', ICON: '../../assets/icons/vk.png' },
+];
 
-export default socialList;
+export default SOCIAL_LIST;

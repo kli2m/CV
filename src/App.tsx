@@ -6,7 +6,6 @@ export const App: React.FC = () => (
   <div className="wrapper">
     <Header />
     <Main />
-    <footer className="footer"></footer>
   </div>
 );
 

@@ -6,8 +6,11 @@
     display: flex;
     margin-left: $indent-70;
   }
+  .skills-block {
+    justify-content: space-around;
+  }
   .main__additional-info {
     background-color: $tertiary-color;
-    padding: $indent-two-sides-20-0;
+    padding: $indent-two-sides-10-0-65;
   }
 }

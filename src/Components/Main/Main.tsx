@@ -1,6 +1,6 @@
 import React from 'react';
 import { Chapter, ContactInfo, AboutMe, Progress, InfoList } from 'Components';
-import { skills, menuBar } from 'constants/index';
+import { SKILLS, INFO } from 'constants/index';
 import './Main.scss';
 
 const Main = () => (
@@ -13,23 +13,23 @@ const Main = () => (
       </div>
       <Chapter title={'SKILLS'} />
       <div className="skills-block">
-        {Object.entries(skills).map((skill, ind) => (
-          <Progress key={`${skill} + ${ind}`} title={skill[0]} percent={skill[1]} />
+        {SKILLS.map((skill, ind) => (
+          <Progress key={`${skill} + ${ind}`} title={skill.SKILL} percent={skill.LEVEL} />
         ))}
       </div>
     </div>
     <div className="main__additional-info">
       <Chapter title={'EXPERIENCE'} />
       <div className="experience-block">
-        <InfoList experience={menuBar.EXPERINCE} />
+        <InfoList experience={INFO.EXPERINCE} />
       </div>
       <Chapter title={'EDUCATION'} />
       <div className="education-block">
-        <InfoList experience={menuBar.EDUCATION} />
+        <InfoList experience={INFO.EDUCATION} />
       </div>
       <Chapter title={'LANGUAGES'} />
       <div className="education-block">
-        <InfoList experience={menuBar.LANGUAGES} />
+        <InfoList experience={INFO.LANGUAGES} />
       </div>
     </div>
   </main>

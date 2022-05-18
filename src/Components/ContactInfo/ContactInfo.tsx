@@ -1,33 +1,29 @@
 import React from 'react';
-import { contactInfo, socialList } from 'constants/index';
+import { CONTACT_INFO, SOCIAL_LIST } from 'constants/index';
 import './ContactInfo.scss';
 
 const ContactInfo = () => (
   <div className="contact-info">
     <div className="contact-info__items">
-      {Object.entries(contactInfo).map((contact, ind) => (
-        <div className="item" key={`${contact} + ${ind}`}>
-          <div className="item__name">{contact[0]}</div>
+      {CONTACT_INFO.map((contact, ind) => (
+        <div className="item" key={`${contact.TYPE} + ${ind}`}>
+          <div className="item__name">{contact.TYPE}</div>
           <div className="item__value">
-            {contact[1].prefix.length > 0 ? (
-              <a href={`${contact[1].prefix}${contact[1].name}`}>{contact[1].name} </a>
-            ) : (
-              contact[1].name
-            )}
+            <a href={`${contact.PREFIX}${contact.VALUE}`}>{contact.VALUE} </a>
           </div>
         </div>
       ))}
     </div>
     <div className="contact-info__social-list">
       <ul>
-        {Object.entries(socialList).map((social, ind) => (
+        {SOCIAL_LIST.map((social, ind) => (
           <li className="contact-info__social-list_item" key={`${social} + ${ind}`}>
             <a
-              className={`social-icon-${social[0]}`}
-              href={`${social[1].link}`}
-              title={social[0]}
+              className={`social-icon-${social.NAME}`}
+              href={`${social.LINK}`}
+              title={social.NAME}
               rel="noopener"
-              style={{ background: `url(${social[1].icon})`, backgroundSize: 'contain' }}
+              style={{ background: `url(${social.ICON})`, backgroundSize: 'contain' }}
             ></a>
           </li>
         ))}

@@ -1,10 +1,5 @@
-interface contactItem {
-  name: string;
-  prefix: string;
-}
-
-export interface contactInfoType {
-  Web: contactItem;
-  Phone: contactItem;
-  Mail: contactItem;
+export interface ContactInfoType {
+  TYPE: string;
+  VALUE: string;
+  PREFIX: string;
 }
