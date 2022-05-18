@@ -1,7 +1,13 @@
+@import '../../styles/theme.scss';
 .main {
   width: 100%;
   .about-block,
   .skills-block {
     display: flex;
+    margin-left: $indent-70;
+  }
+  .main__additional-info {
+    background-color: $tertiary-color;
+    padding: $indent-two-sides-20-0;
   }
 }

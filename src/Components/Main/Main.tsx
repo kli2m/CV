@@ -1,6 +1,6 @@
 import React from 'react';
-import { Chapter, ContactInfo, AboutMe } from 'Components';
-import Progress from 'Components/Progress/Progress';
+import { Chapter, ContactInfo, AboutMe, Progress, InfoList } from 'Components';
+import { skills, menuBar } from 'constants/index';
 import './Main.scss';
 
 const Main = () => (
@@ -11,13 +11,25 @@ const Main = () => (
         <ContactInfo />
         <AboutMe />
       </div>
-
       <Chapter title={'SKILLS'} />
       <div className="skills-block">
-        <Progress title={'HTML/CSS'} percent={90} />
-        <Progress title={'JavaScript'} percent={90} />
-        <Progress title={'React'} percent={70} />
-        <Progress title={'NodeJs'} percent={40} />
+        {Object.entries(skills).map((skill, ind) => (
+          <Progress key={`${skill} + ${ind}`} title={skill[0]} percent={skill[1]} />
+        ))}
+      </div>
+    </div>
+    <div className="main__additional-info">
+      <Chapter title={'EXPERIENCE'} />
+      <div className="experience-block">
+        <InfoList experience={menuBar.EXPERINCE} />
+      </div>
+      <Chapter title={'EDUCATION'} />
+      <div className="education-block">
+        <InfoList experience={menuBar.EDUCATION} />
+      </div>
+      <Chapter title={'LANGUAGES'} />
+      <div className="education-block">
+        <InfoList experience={menuBar.LANGUAGES} />
       </div>
     </div>
   </main>

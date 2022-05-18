@@ -1,0 +1,55 @@
+@import '../../styles/theme.scss';
+.list {
+  margin-left: $indent-70;
+  list-style: none;
+  &__item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    &::before {
+      content: '\2022';
+      color: $primary-color;
+      font-weight: $font-weight-semi-bold;
+      font-size: $font-30;
+      display: inline-block;
+      position: absolute;
+      top: calc($font-30 / 2);
+      left: 0;
+      margin-left: -1em;
+    }
+    .item__header {
+      display: flex;
+      font-size: $font-19;
+      padding: $indent-5;
+      position: relative;
+      &_title {
+        font-weight: $font-weight-regular;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-right: $indent-20;
+        padding: $indent-5;
+        width: $title-of-list-item-width;
+      }
+      &_dates {
+        font-weight: $font-weight-medium;
+        background-color: $quaternary-color;
+        border-radius: $border-radius-10;
+        padding: $indent-5;
+        left: $indent-50;
+        display: inline-block;
+        align-items: center;
+        width: max-content;
+        color: white;
+        position: relative;
+      }
+    }
+    .item__description {
+      position: relative;
+      font-size: $font-30;
+    }
+  }
+}

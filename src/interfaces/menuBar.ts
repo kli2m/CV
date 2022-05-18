@@ -1,4 +1,5 @@
-interface event {
+export interface event {
+  title: string;
   dates: string;
   description: string;
 }
@@ -7,5 +8,5 @@ export interface MenuBarType {
   SKILLS: string;
   EXPERINCE: event[];
   EDUCATION: event[];
-  CONTACT: string;
+  LANGUAGES: event[];
 }

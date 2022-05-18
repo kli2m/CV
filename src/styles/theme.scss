@@ -1,35 +1,38 @@
 /* Colors */
 
-$dark-color: #000000;
 $light-color: #ffffff;
-$header-background-color: #f3f3f3;
 $text-color: #304153;
 $primary-color: #007ea8;
 $secondary-color: #cdcbd0;
+$tertiary-color: #f3f3f3;
+$quaternary-color: #3499dc;
 
 /* Sizes*/
 
+$app-width: 1100px;
 $menu-bar-height: 50px;
-$chapter-parall-width: 155px;
+$chapter-parall-width: 165px;
 $chapter-parall-height: 45px;
 $div-line-width: 850px;
 $div-line-height: 4px;
 $foto-weight: 230px;
 $contact-info-weight: 350px;
 $social-icon-size: 40px;
-$progress-outside-circle: 230px;
+$progress-outside-circle: 170px;
 $progress-outside-circle-half: calc($progress-outside-circle/2);
-$progress-thickness: 50px;
+$progress-thickness: 35px;
 $progress-inside-circle: calc($progress-outside-circle - ($progress-thickness));
+$title-of-list-item-width: 200px;
 
 /*Font*/
 
-$font-16: 16px;
-$font-20: 20px;
-$font-23: 23px;
-$font-30: 30px;
-$font-55: 55px;
-$font-75: 75px;
+$font-16: 1rem;
+$font-20: 1.2rem;
+$font-23: 1.3rem;
+$font-30: 1.6rem;
+$font-19: 1.9rem;
+$font-55: 2.3rem;
+$font-75: 4rem;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
@@ -46,6 +49,7 @@ $line-height-20: 20px;
 $indent-5: 5px;
 $indent-10: 10px;
 $indent-20: 20px;
+$indent-50: 50px;
 $indent-65: 65px;
 $indent-70: 70px;
 $indent-110: 110px;
@@ -65,5 +69,5 @@ $default-transform-parallelogram-deg: skew(-$parallelogram-deg);
 
 /* borders */
 
-$border-radius-3: 3px;
+$border-radius-10: 10px;
 $border-radius-circle: 50%;

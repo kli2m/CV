@@ -1,9 +1,13 @@
 @import './styles/theme.scss';
+html {
+  font-size: 14px;
+}
+
 .wrapper {
   font-family: 'Alexander';
   font-size: $font-16;
   text-align: center;
-  width: 1200px;
+  width: $app-width;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

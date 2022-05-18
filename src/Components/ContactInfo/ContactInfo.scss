@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: $indent-70;
   &__items {
     display: flex;
     flex-direction: column;
@@ -30,6 +29,12 @@
         position: absolute;
         left: $indent-110;
         top: 0;
+        a,
+        a:active {
+          text-decoration: none;
+          outline: none;
+          color: $text-color;
+        }
       }
     }
   }

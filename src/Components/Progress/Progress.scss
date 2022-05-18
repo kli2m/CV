@@ -1,11 +1,9 @@
 @import '../../styles/theme.scss';
 .progress {
-  width: $progress-outside-circle;
-  height: $progress-outside-circle;
   margin: $indent-20;
   .outside-circle {
-    width: inherit;
-    height: inherit;
+    width: $progress-outside-circle;
+    height: $progress-outside-circle;
     background: #fefcff;
     border-radius: $border-radius-circle;
     border: 1px solid $secondary-color;
@@ -20,14 +18,14 @@
     }
     &__mask .fill {
       clip: rect(0px, $progress-outside-circle-half, $progress-outside-circle, 0px);
-      background-color: $primary-color;
+      background-color: $quaternary-color;
     }
   }
   .inside-circle {
     width: $progress-inside-circle;
     height: $progress-inside-circle;
     border-radius: $border-radius-circle;
-    background: $header-background-color;
+    background: $tertiary-color;
     line-height: $progress-inside-circle;
     text-align: center;
     margin-top: $indent-progress-inside-circle;
