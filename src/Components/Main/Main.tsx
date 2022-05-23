@@ -16,6 +16,10 @@ const Main = () => (
         {SKILLS.map((skill, ind) => (
           <Progress key={`${skill} + ${ind}`} title={skill.SKILL} percent={skill.LEVEL} />
         ))}
+        <div className="skills-block__fullstack">
+          <span className="skills-block__fullstack_title"> FullStack: </span>
+          <span className="skills-block__fullstack_enum">{INFO.SKILLS}</span>
+        </div>
       </div>
     </div>
     <div className="main__additional-info">

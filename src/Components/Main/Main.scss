@@ -10,6 +10,22 @@
     margin-left: $indent-70;
     flex-wrap: wrap;
     justify-content: space-around;
+    &__fullstack {
+      &_title {
+        font-family: 'Baron';
+        font-size: $font-1;
+        letter-spacing: $letter-spacing-title-2;
+        font-weight: $font-weight-medium;
+        font-style: $font-style-normal;
+      }
+      &_enum {
+        font-family: 'Comfortaa';
+        font-size: $font-1;
+        letter-spacing: $letter-spacing-subtitle;
+        font-weight: $font-weight-regular;
+        font-style: $font-style-italic;
+      }
+    }
   }
   .main__additional-info {
     background-color: $tertiary-color;

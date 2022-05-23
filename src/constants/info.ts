@@ -5,7 +5,7 @@ const INFO: InfoType = {
 I have experience working on React on a commercial project.
 I want to find my dream job and continue to develop in this direction.`,
   SKILLS:
-    'JS(6+), React (TypeScript, Redux, Apollo (reactive variables)), CSS, SASS, JUST, Get, Trello, Figma, Node Js (based on courses), Vue (self-study)',
+    'HTML, CSS, SASS, JS(6+), React, Redux, Apollo (reactive variables), TypeScript, JUST, Material UI, Ant, ESLint, Git, WebPack, Trello, Figma, Node Js (based on courses), MongoDB, Postman',
   EXPERINCE: [
     {
       TITLE: 'NDA',
