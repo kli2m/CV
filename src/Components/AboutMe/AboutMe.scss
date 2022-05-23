@@ -24,3 +24,37 @@
     }
   }
 }
+
+@media only screen and (min-width: $media-phone-min) and (max-width: $media-phone-max) {
+  .about-me {
+    flex-direction: column;
+    &__foto-block {
+      width: 100%;
+      &_img {
+        width: $foto-weight-less-480;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+  .about-me {
+    flex-direction: column;
+    &__foto-block {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-laptop-min) and (max-width: $media-laptop-max) {}
+
+@media only screen and (min-width: $media-pc-min) {
+  .about-me {
+    margin: $indent-two-sides-0-40;
+    &__bio {
+      &_text {
+        font-size: $font-1-3;
+      }
+    }
+  }
+}

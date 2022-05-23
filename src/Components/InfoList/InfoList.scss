@@ -38,10 +38,9 @@
         background-color: $quaternary-color;
         border-radius: $border-radius-10;
         padding: $indent-two-sides-3-10;
-        left: $indent-50;
         display: inline-block;
         align-items: center;
-        width: max-content;
+        white-space: nowrap;
         color: white;
         position: relative;
       }
@@ -51,6 +50,19 @@
       font-size: $font-1-6;
       text-align: start;
       padding: $indent-two-sides-0-10;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-phone-min) and (max-width: $media-phone-max) {
+  .list {
+    margin-left: $indent-25;
+    &__item {
+      .item__header {
+        &_title {
+          width: $title-of-list-item-width-less-480;
+        }
+      }
     }
   }
 }

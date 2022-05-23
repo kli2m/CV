@@ -34,7 +34,69 @@
     width: $div-line-width;
     height: $div-line-height;
     position: absolute;
-    right: 0px;
     background-color: $primary-color;
+  }
+}
+
+@media only screen and (min-width: $media-phone-min) and (max-width: $media-phone-max) {
+  .chapter {
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    &__parallelogram {
+      width: calc(#{$chapter-parall-width} / 1.8);
+      height: calc(#{$chapter-parall-height} / 1.8);
+      z-index: 1;
+    }
+    &__dividing-line {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+  .chapter {
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    &__parallelogram {
+      width: calc(#{$chapter-parall-width} / 1.5);
+      height: calc(#{$chapter-parall-height} / 1.5);
+      z-index: 1;
+    }
+    &__dividing-line {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-laptop-min) and (max-width: $media-laptop-middle-min) {
+  .chapter {
+    &__parallelogram {
+      width: calc(#{$chapter-parall-width} / 1.1);
+      height: calc(#{$chapter-parall-height} / 1.1);
+    }
+    &__dividing-line {
+      width: calc(#{$div-line-width} / 1.6);
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-laptop-middle-max) and (max-width: $media-laptop-max) {
+  .chapter {
+    &__dividing-line {
+      width: calc(#{$div-line-width} / 1.4);
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-pc-min) {
+  .chapter {
+    &__dividing-line {
+      width: calc(#{$div-line-width} / 1.2);
+      right: 0;
+    }
   }
 }

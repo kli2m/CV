@@ -1,16 +1,42 @@
 @import '../../styles/theme.scss';
 .main {
   width: 100%;
-  .about-block,
-  .skills-block {
+  .about-block {
     display: flex;
     margin-left: $indent-70;
   }
   .skills-block {
+    display: flex;
+    margin-left: $indent-70;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
   .main__additional-info {
     background-color: $tertiary-color;
     padding: $indent-two-sides-10-0-65;
+  }
+}
+
+@media only screen and (min-width: $media-phone-min) and (max-width: $media-tablet-max) {
+  .main {
+    .about-block {
+      flex-direction: column-reverse;
+    }
+    .about-block,
+    .skills-block {
+      margin: $indent-20;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-laptop-min) and (max-width: $media-laptop-max) {
+  .main {
+    .about-block {
+      flex-direction: column;
+    }
+    .skills-block {
+      margin-left: $indent-40;
+    }
   }
 }

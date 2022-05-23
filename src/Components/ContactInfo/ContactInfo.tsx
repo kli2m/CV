@@ -14,8 +14,8 @@ const ContactInfo = () => (
         </div>
       ))}
     </div>
-    <div className="contact-info__social-list">
-      <ul>
+    {/* <div className="contact-info__social-list"> */}
+      <ul className="contact-info__social-list">
         {SOCIAL_LIST.map((social, ind) => (
           <li className="contact-info__social-list_item" key={`${social} + ${ind}`}>
             <a
@@ -28,7 +28,7 @@ const ContactInfo = () => (
           </li>
         ))}
       </ul>
-    </div>
+    {/* </div> */}
   </div>
 );
 

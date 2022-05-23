@@ -8,6 +8,8 @@
     border-radius: $border-radius-circle;
     border: 1px solid $secondary-color;
     margin: $indent-two-sides-10-auto;
+    position: relative;
+    overflow: hidden;
     &__mask,
     .fill {
       width: inherit;
@@ -36,5 +38,51 @@
   }
   .title {
     font-size: $font-1-6;
+  }
+}
+
+@media only screen and (min-width: $media-phone-min) and (max-width: $media-phone-max) {
+  .progress {
+    .outside-circle {
+      width: $progress-outside-circle-less-480;
+      height: $progress-outside-circle-less-480;
+      &__mask,
+      .fill {
+        clip: rect( 0px, $progress-outside-circle-less-480, $progress-outside-circle-less-480, $progress-outside-circle-half-less-480);
+      }
+      &__mask .fill {
+        clip: rect( 0px, $progress-outside-circle-half-less-480, $progress-outside-circle-less-480, 0px);
+      }
+    }
+    .inside-circle {
+      width: $progress-inside-circle-less-480;
+      height: $progress-inside-circle-less-480;
+      margin-top: $indent-progress-inside-circle-less-480;
+      margin-left: $indent-progress-inside-circle-less-480;
+      line-height: $progress-inside-circle-less-480;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+  .progress {
+    .outside-circle {
+      width: $progress-outside-circle-less-768;
+      height: $progress-outside-circle-less-768;
+      &__mask,
+      .fill {
+        clip: rect( 0px, $progress-outside-circle-less-768, $progress-outside-circle-less-768, $progress-outside-circle-half-less-768);
+      }
+      &__mask .fill {
+        clip: rect( 0px, $progress-outside-circle-half-less-768, $progress-outside-circle-less-768, 0px);
+      }
+    }
+    .inside-circle {
+      width: $progress-inside-circle-less-768;
+      height: $progress-inside-circle-less-768;
+      margin-top: $indent-progress-inside-circle-less-768;
+      margin-left: $indent-progress-inside-circle-less-768;
+      line-height: $progress-inside-circle-less-768;
+    }
   }
 }
