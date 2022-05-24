@@ -48,3 +48,11 @@
     }
   }
 }
+
+@media only print {
+  .header {
+    .content {
+      margin: $indent-two-sides-5-0;
+    }
+  }
+}

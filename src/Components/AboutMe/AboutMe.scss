@@ -58,3 +58,20 @@
     }
   }
 }
+
+@media only print {
+  .about-me {
+    &__foto-block {
+      width: 100%;
+      &_img {
+        margin: $indent-two-sides-0-10;
+        width: $foto-weight-less-480;
+      }
+    }
+    &__bio {
+      &_text {
+        font-size: $font-1-3;
+      }
+    }
+  }
+}

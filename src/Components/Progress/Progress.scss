@@ -41,8 +41,10 @@
   }
 }
 
-@media only screen and (min-width: $media-phone-min) and (max-width: $media-phone-max) {
+@media only print,
+screen and (min-width: $media-phone-min) and (max-width: $media-phone-max) {
   .progress {
+    margin: $indent-two-sides-5-auto;
     .outside-circle {
       width: $progress-outside-circle-less-480;
       height: $progress-outside-circle-less-480;

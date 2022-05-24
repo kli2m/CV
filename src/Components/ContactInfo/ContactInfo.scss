@@ -78,3 +78,20 @@
     }
   }
 }
+
+@media only print {
+  .contact-info {
+    width: $contact-info-weight-less-480;
+    &__items {
+      .item {
+        margin: $indent-two-sides-5-0;
+        &__value {
+          left: $indent-65;
+        }
+      }
+    }
+    &__social-list {
+      justify-content: space-between;
+    }
+  }
+}

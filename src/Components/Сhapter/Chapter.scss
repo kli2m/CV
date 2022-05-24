@@ -100,3 +100,18 @@
     }
   }
 }
+
+@media only print {
+  .chapter {
+    margin: $indent-two-sides-5-0;
+    &__parallelogram {
+      width: calc(#{$chapter-parall-width} / 1.4);
+      height: calc(#{$chapter-parall-height} / 1.4);
+    }
+    &__dividing-line {
+      height: $div-line-height-print;
+      width: 70%;
+      right: 0;
+    }
+  }
+}

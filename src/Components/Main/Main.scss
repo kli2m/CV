@@ -1,13 +1,15 @@
 @import '../../styles/theme.scss';
 .main {
   width: 100%;
+  .about-block,
+  .skills-block {
+    padding-left: $indent-70;
+  }
   .about-block {
     display: flex;
-    margin-left: $indent-70;
   }
   .skills-block {
     display: flex;
-    margin-left: $indent-70;
     flex-wrap: wrap;
     justify-content: space-around;
     &__fullstack {
@@ -27,9 +29,13 @@
       }
     }
   }
-  .main__additional-info {
+  &__additional-info {
     background-color: $tertiary-color;
     padding: $indent-two-sides-10-0-65;
+    .experience-block,
+    .education-block {
+      padding-left: $indent-70;
+    }
   }
 }
 
@@ -40,8 +46,15 @@
     }
     .about-block,
     .skills-block {
+      padding-left: 0;
       margin: $indent-20;
       align-items: center;
+    }
+    &__additional-info {
+      .experience-block,
+      .education-block {
+        padding-left: $indent-25;
+      }
     }
   }
 }
@@ -53,6 +66,14 @@
     }
     .skills-block {
       margin-left: $indent-40;
+    }
+  }
+}
+
+@media only print {
+  .main {
+    &__additional-info {
+      padding: $indent-two-sides-5-0;
     }
   }
 }
