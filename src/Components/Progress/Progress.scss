@@ -1,0 +1,90 @@
+@import '../../styles/theme.scss';
+.progress {
+  margin: $indent-10;
+  .outside-circle {
+    width: $progress-outside-circle;
+    height: $progress-outside-circle;
+    background: #fefcff;
+    border-radius: $border-radius-circle;
+    border: 1px solid $secondary-color;
+    margin: $indent-two-sides-10-auto;
+    position: relative;
+    overflow: hidden;
+    &__mask,
+    .fill {
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      border-radius: $border-radius-circle;
+      clip: rect( 0px, $progress-outside-circle, $progress-outside-circle, $progress-outside-circle-half);
+    }
+    &__mask .fill {
+      clip: rect(0px, $progress-outside-circle-half, $progress-outside-circle, 0px);
+      background-color: $quaternary-color;
+    }
+  }
+  .inside-circle {
+    width: $progress-inside-circle;
+    height: $progress-inside-circle;
+    border-radius: $border-radius-circle;
+    background: $tertiary-color;
+    line-height: $progress-inside-circle;
+    text-align: center;
+    margin-top: $indent-progress-inside-circle;
+    margin-left: $indent-progress-inside-circle;
+    position: absolute;
+    z-index: 100;
+    font-size: $font-2-3;
+  }
+  .title {
+    font-size: $font-1-6;
+  }
+}
+
+@media only print,
+screen and (max-width: $media-phone-max) {
+  .progress {
+    margin: $indent-two-sides-5-auto;
+    .outside-circle {
+      width: $progress-outside-circle-less-480;
+      height: $progress-outside-circle-less-480;
+      &__mask,
+      .fill {
+        clip: rect( 0px, $progress-outside-circle-less-480, $progress-outside-circle-less-480, $progress-outside-circle-half-less-480);
+      }
+      &__mask .fill {
+        clip: rect( 0px, $progress-outside-circle-half-less-480, $progress-outside-circle-less-480, 0px);
+      }
+    }
+    .inside-circle {
+      width: $progress-inside-circle-less-480;
+      height: $progress-inside-circle-less-480;
+      margin-top: $indent-progress-inside-circle-less-480;
+      margin-left: $indent-progress-inside-circle-less-480;
+      line-height: $progress-inside-circle-less-480;
+    }
+  }
+}
+
+@media only screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+  .progress {
+    .outside-circle {
+      width: $progress-outside-circle-less-768;
+      height: $progress-outside-circle-less-768;
+      &__mask,
+      .fill {
+        clip: rect( 0px, $progress-outside-circle-less-768, $progress-outside-circle-less-768, $progress-outside-circle-half-less-768);
+      }
+      &__mask .fill {
+        clip: rect( 0px, $progress-outside-circle-half-less-768, $progress-outside-circle-less-768, 0px);
+      }
+    }
+    .inside-circle {
+      width: $progress-inside-circle-less-768;
+      height: $progress-inside-circle-less-768;
+      margin-top: $indent-progress-inside-circle-less-768;
+      margin-left: $indent-progress-inside-circle-less-768;
+      line-height: $progress-inside-circle-less-768;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import '../../styles/theme.scss';
+.main {
+  width: 100%;
+  .about-block,
+  .skills-block {
+    padding-left: $indent-70;
+  }
+  .about-block {
+    display: flex;
+  }
+  .skills-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &__fullstack {
+      &_title {
+        font-family: 'Baron';
+        font-size: $font-1;
+        letter-spacing: $letter-spacing-title-2;
+        font-weight: $font-weight-medium;
+        font-style: $font-style-normal;
+      }
+      &_enum {
+        font-family: 'Comfortaa';
+        font-size: $font-1;
+        letter-spacing: $letter-spacing-subtitle;
+        font-weight: $font-weight-regular;
+        font-style: $font-style-italic;
+      }
+    }
+  }
+  &__additional-info {
+    background-color: $tertiary-color;
+    padding: $indent-two-sides-10-0-65;
+    .experience-block,
+    .education-block {
+      padding-left: $indent-70;
+    }
+  }
+}
+
+@media only screen and (max-width: $media-tablet-max) {
+  .main {
+    .about-block {
+      flex-direction: column-reverse;
+    }
+    .about-block,
+    .skills-block {
+      padding-left: 0;
+      margin: $indent-20;
+      align-items: center;
+    }
+    &__additional-info {
+      .experience-block,
+      .education-block {
+        padding-left: $indent-25;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $media-laptop-min) and (max-width: $media-laptop-max) {
+  .main {
+    .about-block {
+      flex-direction: column;
+    }
+    .skills-block {
+      margin-left: $indent-40;
+    }
+  }
+}
+
+@media only print {
+  .main {
+    &__additional-info {
+      padding: $indent-two-sides-5-0;
+    }
+  }
+}

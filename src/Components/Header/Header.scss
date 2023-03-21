@@ -1,0 +1,58 @@
+@import '../../styles/theme.scss';
+.header {
+  width: 100%;
+  border: 1px solid $light-color;
+  color: $light-color;
+  background-color: $tertiary-color;
+  color: $text-color;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: $indent-70;
+    margin: $indent-two-sides-20-0;
+    &__personal-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      flex: 1 auto;
+      &_name {
+        font-family: 'Baron';
+        font-size: $font-4;
+        letter-spacing: $letter-spacing-title;
+        font-weight: $font-weight-medium;
+        font-style: $font-style-normal;
+        margin: $indent-two-sides-10-0;
+      }
+      &_specialization {
+        font-family: 'Zhizn';
+        font-size: $font-1-3;
+        letter-spacing: $letter-spacing-title;
+        font-weight: $font-weight-semi-bold;
+        font-style: $font-style-normal;
+        line-height: $line-height-20;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $media-tablet-max) {
+  .header {
+    .content {
+      padding: 0;
+      align-items: center;
+      &__personal-info {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media only print {
+  .header {
+    .content {
+      margin: $indent-two-sides-5-0;
+    }
+  }
+}
