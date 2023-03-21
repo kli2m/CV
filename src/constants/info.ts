@@ -5,11 +5,17 @@ const INFO: InfoType = {
 I have experience working on React on a commercial project.
 I want to find my dream job and continue to develop in this direction.`,
   SKILLS:
-    'HTML, CSS, SASS, JS(6+), React, Redux, Apollo (reactive variables), TypeScript, JUST, Material UI, Ant, ESLint, Git, WebPack, Trello, Figma, Node Js (based on courses), MongoDB, Postman',
+    'HTML, CSS, SASS, JS(6+), React, Redux (RTK), Apollo (reactive variables), TypeScript, JEST, Material UI, Ant, ESLint, Git, WebPack, Trello, Figma, Node Js (based on courses), MongoDB, Postman',
   EXPERINCE: [
     {
+      TITLE: 'NOVOTECH.AI',
+      PERIOD: 'Sep 2022 - Jan 2023',
+      DESCRIPTION:
+        'Changing the SPA design, optimization of API requests, working with DICOM files. React, TypeScript, Material UI, Redux Tool Kit, Scss, Figma',
+    },
+    {
       TITLE: 'NDA',
-      PERIOD: 'Nov 2021 - Apr 2022',
+      PERIOD: 'Aug 2021 - June 2022',
       DESCRIPTION:
         'The project included working with React library, TypeScript, Sass preprocessor, Apollo graphic client, and creating Just tests.',
     },

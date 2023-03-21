@@ -42,7 +42,7 @@
 }
 
 @media only print,
-screen and (min-width: $media-phone-min) and (max-width: $media-phone-max) {
+screen and (max-width: $media-phone-max) {
   .progress {
     margin: $indent-two-sides-5-auto;
     .outside-circle {
