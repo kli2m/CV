@@ -1,11 +1,9 @@
 import { InfoType } from 'interfaces';
 
 const INFO: InfoType = {
-  ABOUT: `I've been studying Javascript since 2019, constantly improving my knowledge.
-  I have 1.5 years of experience with React in commercial projects.
-  Looking for a permanent job.`,
+  ABOUT: 'I\'ve been studying Javascript since 2019, constantly improving my knowledge. I have 1.5 years of experience with React in commercial projects. Looking for a permanent job.',
   SKILLS:
-    'HTML, CSS, SASS, JS(6+), React, Redux (RTK), Apollo (reactive variables), TypeScript, JEST, Material UI, Ant, ESLint, Git, WebPack, Trello, Figma, Node Js (based on courses), MongoDB, Postman',
+    'HTML, CSS, SASS, JS(6+), React, Redux (RTK), Angular (RxJS, NGRX), Apollo (reactive variables), TypeScript, JEST, Material UI, Ant, ESLint, Git, WebPack, Trello, Figma, Node Js (based on courses), MongoDB, Postman',
   EXPERINCE: [
     {
       TITLE: 'NOVOTECH.AI',
