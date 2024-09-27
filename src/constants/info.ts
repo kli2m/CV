@@ -1,10 +1,15 @@
 import { InfoType } from 'interfaces';
 
 const INFO: InfoType = {
-  ABOUT: 'I\'ve been studying Javascript since 2019, constantly improving my knowledge. I have 1.5 years of experience with React in commercial projects. Looking for a permanent job.',
+  ABOUT: 'I am a frontend developer with 3 years of experience specializing in building high quality web applications using HTML, CSS and JavaScript. Strive to create an intuitive and responsive user interface with a focus on performance and cross-browser compatibility. Open to new technologies and willing to continuously learn. Looking for an opportunity to join a team where I can contribute to the development of interesting and innovative products.',
   SKILLS:
     'HTML, CSS, SASS, JS(6+), React, Redux (RTK), Angular (RxJS, NGRX), Apollo (reactive variables), TypeScript, JEST, Material UI, Ant, ESLint, Git, WebPack, Trello, Figma, Node Js (based on courses), MongoDB, Postman',
   EXPERINCE: [
+    {
+      TITLE: 'Freelance',
+      PERIOD: 'Feb 2023 - Present',
+      DESCRIPTION: 'Projects and startups on React, Angular.',
+    },
     {
       TITLE: 'NOVOTECH.AI',
       PERIOD: 'Sep 2022 - Jan 2023',
@@ -16,16 +21,6 @@ const INFO: InfoType = {
       PERIOD: 'Aug 2021 - June 2022',
       DESCRIPTION:
         'The project included working with React library, TypeScript, Sass preprocessor, Apollo graphic client, and creating Jest tests.',
-    },
-    {
-      TITLE: 'BELARUSBANK',
-      PERIOD: 'Apr 2020 - Present',
-      DESCRIPTION: 'Position: Economic security sector specialist.',
-    },
-    {
-      TITLE: 'BELARUSBANK',
-      PERIOD: 'Apr 2008 - Apr 2020',
-      DESCRIPTION: 'Position: Automatization sector specialist',
     },
   ],
   EDUCATION: [
