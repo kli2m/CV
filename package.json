@@ -55,7 +55,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
-    "node-sass": "^7.0.1",
     "sass-loader": "^12.6.0"
   }
 }
